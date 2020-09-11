@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'vga850';
+  src: url('fonts/vga850.ttf');
+}
+
+* { margin:0; border:0; padding:0; font-family:Arial; }
+
+body, html {overflow-x:hidden; height: 100%;}
+
+#content {display: table; width: 100%; height: 100%; background-color: #f2e3d0; position: relative;}
+
+#menu {position: absolute; width: 300px; left: 100%; height: 100%; background-color: #6f0704; border-left: 3px solid #921d19; box-sizing: border-box; transition:margin-left .4s; margin-left: 0;}
+#menu.on {margin-left: -300px;}
+#menu .btMenu {position: absolute; bottom: 0; left: -80px; width: 80px; height: 80px; cursor: pointer; background: url('../imagens/bt_menu.png') left top; transition:left .4s; }
+#menu.on .btMenu { left: 0; background-position: right top;}
+#menu .logo {position: absolute; top: 15px; left: -115px; width: 100px; height: 100px; background-image: url('../imagens/logo.jpg'); border-radius: 50%; overflow: hidden; background-size: 100%; transition:left .4s;}
+#menu.on .logo {left: -70px;}
+
+#menu .listBts {float: left; width: 100%; padding: 80px 0 0 ; box-sizing: border-box;}
+#menu .listBts .bt {float: left; clear: both; width: 100%;  color: #ffdb57; font-size: 15px; margin-bottom: 5px;}
+#menu .listBts .bt .nome{float: left; clear: both; width: 100%; font-weight: bold; font-size: 20px; line-height: 40px; background-color: #921d19; padding: 0 30px;}
+#menu .listBts .subMenu {float: left; clear: both; width: 100%; overflow: hidden; text-align: center; }
+#menu .listBts .subMenu .optB {float: left; width: 100%; height: 25px; line-height: 25px; padding:  0 0 0 45px; cursor: pointer; margin: 2px 0 0; text-align: left;}
+#menu .listBts .subMenu .optB:hover { background-color: rgba(252,227,208,.15);}
+#menu .listBts .subMenu .optF {display: inline-block; height: 50px;width: 50px; cursor: pointer; }
+#menu .listBts .subMenu .optF .quad{ width: 40px; height: 40px; box-sizing: border-box; border: 2px solid #000; background-color: #fff; margin: 5px; }
+#menu .listBts .subMenu .optF .circ{ width: 40px; height: 40px; box-sizing: border-box; border: 2px solid #000; background-color: #fff; margin: 5px; border-radius: 50%; }
+#menu .listBts .subMenu .optC {display: inline-block; height: 30px;width: 30px; cursor: pointer; vertical-align: middle; box-sizing: border-box; }
+#menu .listBts .subMenu .optC.cor1 {background-color: #000;}
+#menu .listBts .subMenu .optC.cor2 {background-color: #f0ff0f;}
+#menu .listBts .subMenu .optC.cor3 {background-color: #f00f00;}
+#menu .listBts .subMenu .optC.cor4 {background-color: #aafaad;}
+#menu .listBts .subMenu .optC.cor5 {background-color: #fA3fA3;}
+#menu .listBts .subMenu .optC.cor6 {background-color: #333333;}
+#menu .listBts .subMenu .optC.cor7 {background-color: #A21A21;}
+#menu .listBts .subMenu .optC.cor8 {background-color: #123ab1;}
+#menu .listBts .subMenu .optC.cor9 {background-color: #1210aa;}
+#menu .listBts .subMenu .optC.cor10 {background-color: #132212;}
+#menu .listBts .subMenu .optC.cor11 {background-color: #a00012;}
+#menu .listBts .subMenu .optC.cor12 {background-color: #00ff12;}
+#menu .listBts .subMenu .optC.cor13 {background-color: #fff;}
+#menu .listBts .subMenu .optC.on {transform: scale(1.1);}
+
+#menu .listBts .subMenu .optFnt {float: left; clear: both; width: 100%; height: 40px; line-height: 40px; color: #ffdb57; font-size: 15px; margin-bottom: 5px; font-size: 20px; text-align: right; box-sizing: border-box; padding-right: 50px; }
+#menu .listBts .subMenu .optFnt input{display: inline-block; width: 30px; height: 30px; vertical-align: middle;  text-align: center; font-weight: bold; font-size: 25px;}
+#menu .listBts .subMenu .optFnt.fnt1{font-family: 'Arial';}
+#menu .listBts .subMenu .optFnt.fnt1 input{font-family: 'Arial';}
+#menu .listBts .subMenu .optFnt.fnt2{font-family: 'Verdana';}
+#menu .listBts .subMenu .optFnt.fnt2 input{font-family: 'Verdana';}
+#menu .listBts .subMenu .optFnt.fnt3{font-family: 'Times New Roman';}
+#menu .listBts .subMenu .optFnt.fnt3 input{font-family: 'Times New Roman';}
+#menu .listBts .subMenu .optFnt .btOk {display: inline-block; margin-left: 10px; width: 30px; height: 30px; border-radius: 5px; text-align: center; line-height: 30px; font-weight: bold; font-size: 12px; background-color: #921d19; cursor: pointer; }
+#menu .listBts .agulhaMenu {display: inline-block; width: 30px; height: 30px; vertical-align: middle; position: relative;}
+#menu .listBts .agulhaMenu svg{width: 100%; transform: scale(-1,1); position: absolute; top: 0; left: 0; }
+#menu .listBts .btAgulha{cursor: pointer; opacity: .7;}
+#menu .listBts .btAgulha.on{opacity: 1;}
+#menu .listBts .btAgulha.on .agulhaMenu{filter: drop-shadow(0px 0px 5px #ff0);}
+
+#menu .listBts .contBtsSub{display: table; margin: 5px 40px; text-align: left;}
+
+
+#stage {position: absolute; top: 0; left: 0; overflow: hidden;}
+#stage #bast{position: absolute; top: 50%; left: 50%;  margin: auto; width: 90%; height: 90%; border: 3px solid rgb(119, 26, 3); }
+#stage #bast.circ{border-radius: 50%;}
+#stage #bast .cont{position: absolute; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0;}
+#stage #bast .contDrag{position: absolute; width: 100%; height: 100%; overflow: hidden; top: 0; left: 0; pointer-events: none;}
+#stage #bast .tamanho{position: absolute; height: 30px; font-size: 30px; top: -35px; line-height: 30px;}
+#stage #bast .qd{float: left; width: 15px; height: 15px; box-sizing: border-box; background-color: #fff;}
+#stage #bast .linhaV{position: absolute; width: 1px; height: 100%; background-color: #000; pointer-events: none; }
+#stage #bast .linhaH{position: absolute; width: 100%; height: 1px; background-color: #000; pointer-events: none; }
+.letraDrag {position: absolute; border: 2px solid transparent;  box-sizing: content-box; margin: -2px; cursor: pointer; pointer-events: all;}
+.letraDrag .ponto{float: left;width: 15px; height: 15px;}
+
+
+#agulha {position: absolute; top: 100px; left: 100px; width: 30px; z-index: 90; display: none; pointer-events: none; margin: -28px 0 0;}
+#agulha svg{width: 100%; transform: scale(-1,1); position: absolute; top: 0; left: 0; }
+
+@media (max-width: 900px) {
+	
+}
+@media (max-width: 700px) {
+	
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="DESCRIÇAO" />	
+	<link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+	<title>Priscila</title>
+	<link rel="stylesheet" href="css/master.css" />
+	<script type="text/javascript" src="jss/jquery.min.js" ></script>
+	<script type="text/javascript" src="jss/jquery.mobile.custom.min.js" ></script>
+	<script type="text/javascript" src="jss/TweenMax.min.js" ></script>
+	<script type="text/javascript" src="jss/funcoes.js" ></script>
+	
+
+
+</head>
+<body>
+
+<div id="content">
+
+	<div id="stage">
+
+
+	</div>
+
+
+	<div id="menu">
+		<div class="logo"></div>
+		<div class="btMenu"></div>
+
+		<div class="listBts">
+			<div class="bt">
+				<div class="nome">Bastidor</div>
+				<div class="subMenu">
+					<div class="optB" data-evt="bast" data-attr="20_90"> 20cm X 20cm </div>
+					<div class="optB" data-evt="bast" data-attr="17_76"> 17cm X 17cm </div>
+					<div class="optB" data-evt="bast" data-attr="15_67"> 15cm X 15cm </div>
+				</div>
+			</div>
+			<div class="bt">
+				<div class="nome">Formato</div>
+				<div class="subMenu">
+					<div class="optF" data-evt="forma" data-attr="quad"> <div class="quad"></div> </div>
+					<div class="optF" data-evt="forma" data-attr="circ"> <div class="circ"></div> </div>
+				</div>
+			</div>
+			<div class="bt">
+				<div class="nome">Cores</div>
+				<div class="subMenu">
+					<div class="contBtsSub">
+						<div class="optC cor13" data-evt="cor" ></div>
+						<div class="optC cor1" data-evt="cor" ></div>
+						<div class="optC cor2" data-evt="cor" ></div>
+						<div class="optC cor3" data-evt="cor" ></div>
+						<div class="optC cor4" data-evt="cor" ></div>
+						<div class="optC cor5" data-evt="cor" ></div>
+						<div class="optC cor6" data-evt="cor" ></div>
+						<div class="optC cor7" data-evt="cor" ></div>
+						<div class="optC cor8" data-evt="cor" ></div>
+						<div class="optC cor10" data-evt="cor" ></div>
+						<div class="optC cor11" data-evt="cor" ></div>
+						<div class="optC cor12" data-evt="cor" ></div>
+						<div class="optC cor1" data-evt="cor" ></div>
+						<div class="optC cor2" data-evt="cor" ></div>
+					</div>
+				</div>
+			</div>
+			<div class="bt">
+				<div class="nome">Texto</div>
+				<div class="subMenu">
+					<div class="optFnt fnt1" data-evt="font" data-attr="Arial">
+						Digite a letra »
+						<input type="text" name="" id="" class="campoDigito" maxlength="1" >
+						<div class="btOk">OK</div>
+					</div>
+					<div class="optFnt fnt2" data-evt="font" data-attr="Arial">
+						Digite a letra »
+						<input type="text" name="" id="" class="campoDigito" maxlength="1" >
+						<div class="btOk">OK</div>
+					</div>
+					<div class="optFnt fnt3" data-evt="font" data-attr="Arial">
+						Digite a letra »
+						<input type="text" name="" id="" class="campoDigito" maxlength="1" >
+						<div class="btOk">OK</div>
+					</div>
+				</div>
+			</div>
+			<div class="bt btAgulha">
+				<div class="nome">Desenhar <div class="agulhaMenu"></div></div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div id="agulha">
+	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F3EAE6;}
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#CDBEB9;}
+	</style>
+	<g>
+		<g>
+			<path class="st0" d="M84.9,93.9c2.7,0.9,5.6,1.4,8.6,1.4c14.6,0,26.5-11.8,26.5-26.5c0-14.6-11.8-26.4-26.5-26.4
+				c-14.6,0-26.4,11.8-26.4,26.4C67.1,80.5,74.5,90.3,84.9,93.9z M147.8,187.4l-65.5-55.7l-16-13.6C-15.5,52.8,72-46.3,141,43.3
+				l357.9,441.5c3,3.2,2.6,3.8-0.7,0.7L147.8,187.4z"/>
+		</g>
+		<g>
+			<path class="st1" d="M498.9,484.8L141,43.3C105.6-2.7,65.3,1,45.6,24.4c21.5-10.6,48.9-1.7,76.7,34.4l311.9,372.1l64.2,54.6
+				C501.6,488.5,502,488,498.9,484.8L498.9,484.8z"/>
+		</g>
+		<g>
+			<path d="M506.6,482.2c-0.5-0.7-1.2-1.5-2-2.4L230.8,141.4c-2.6-3.2-7.3-3.7-10.5-1.1c-3.2,2.6-3.7,7.3-1.1,10.5l226.5,280
+				L290.9,299.3c-3.2-2.7-7.9-2.3-10.6,0.9c-2.7,3.2-2.3,7.9,0.9,10.6L493.3,491c0.9,0.9,1.7,1.6,2.4,2.1c1.9,1.4,3.6,1.9,5.2,1.9
+				c2.4,0,4.3-1.1,5.4-2.2C506.7,492.3,510.8,488,506.6,482.2L506.6,482.2z"/>
+			<path d="M169.3,215.5l83.5,71c1.4,1.2,3.1,1.8,4.9,1.8c2.1,0,4.2-0.9,5.7-2.6c2.7-3.2,2.3-7.9-0.9-10.6v0L89.6,128
+				c-0.4-8.6,0.1-17.3,1.3-25.3c0.9,0.1,1.8,0.1,2.6,0.1c18.7,0,34-15.2,34-34c0-18.7-15.2-33.9-34-33.9c-18.7,0-33.9,15.2-33.9,33.9
+				c0,12.5,6.8,23.4,16.8,29.3c-0.9,5.5-1.5,11.3-1.8,17.1l-3.5-2.9c-0.1-0.1-0.1-0.1-0.2-0.1C47.4,93.4,36.8,69.9,42,47.7
+				c3.8-16.3,15.8-28.5,31.2-31.8c20.3-4.4,42.8,7.3,61.8,32c0,0,0.1,0.1,0.1,0.1l61.2,75.5c2.6,3.2,7.3,3.7,10.5,1.1
+				c3.2-2.6,3.7-7.3,1.1-10.5l-61.1-75.4C124.2,9.2,96.2-4.4,70.1,1.2C48.9,5.8,32.6,22.3,27.4,44.3c-6.5,27.6,6.3,57.3,34.1,79.6
+				l13.6,11.5 M92.7,150.4l48.9,41.6 M86.9,65.3c-2.6,4.9-4.9,10.6-6.8,16.9c-3.4-3.4-5.5-8.1-5.5-13.4c0-10.4,8.5-18.9,18.9-18.9
+				c10.5,0,19,8.5,19,18.9c0,10.3-8.2,18.7-18.4,18.9c1.7-5.8,3.7-11,6.1-15.4c2-3.6,0.6-8.2-3-10.2C93.4,60.3,88.8,61.6,86.9,65.3z"
+				/>
+		</g>
+	</g>
+	</svg>
+	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F3EAE6;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M147.8,187.4l-65.5-55.7l-16-13.6"/>
+	</g>
+	<g>
+		<path class="pathLinha" d="M74.6,115.3l-3.5-2.9c-0.1-0.1-0.1-0.1-0.2-0.1 M75.1,135.4c1.2,12.8,4.2,25.4,9.4,36.8c3.5,7.6,11.9,34.2,15.3,67.7
+			c2.9,28.3,3,69.2-13.4,103.3C71.5,374,45.6,394.2,9.2,403.3c-4,1-6.5,5.1-5.5,9.1c0.8,3.4,3.9,5.7,7.3,5.7c0.6,0,1.2-0.1,1.8-0.2
+			c40.9-10.2,70.2-33.1,87.1-68.2c34.4-71.6,5-168.9-1.8-183.8c-2.2-4.9-4-10.1-5.3-15.5l48.9,41.6c1.2,2.8,3.2,6.9,5.9,12.5
+			c21.9,45.9,88.7,185.7,55.7,255.8c-9,19.1-24.6,31.2-47.7,37c-4,1-6.5,5.1-5.5,9.1c0.8,3.4,3.9,5.7,7.3,5.7c0.6,0,1.2-0.1,1.8-0.2
+			c27.4-6.8,46.8-22,57.7-45.1c15.6-33,13.5-82.2-6-146.2c-12.3-40.4-29.4-79.1-41.4-104.9"/>
+	</g>
+	<g>
+		<path class="pathLinha" d="M74.6,115.3l-3.5-2.9c-0.1-0.1-0.1-0.1-0.2-0.1 M75.1,135.4c1.2,12.8,4.2,25.4,9.4,36.8c3.5,7.6,11.9,34.2,15.3,67.7
+			c2.9,28.3,3,69.2-13.4,103.3C71.5,374,45.6,394.2,9.2,403.3c-4,1-6.5,5.1-5.5,9.1c0.8,3.4,3.9,5.7,7.3,5.7c0.6,0,1.2-0.1,1.8-0.2
+			c40.9-10.2,70.2-33.1,87.1-68.2c34.4-71.6,5-168.9-1.8-183.8c-2.2-4.9-4-10.1-5.3-15.5l48.9,41.6c1.2,2.8,3.2,6.9,5.9,12.5
+			c21.9,45.9,88.7,185.7,55.7,255.8c-9,19.1-24.6,31.2-47.7,37c-4,1-6.5,5.1-5.5,9.1c0.8,3.4,3.9,5.7,7.3,5.7c0.6,0,1.2-0.1,1.8-0.2
+			c27.4-6.8,46.8-22,57.7-45.1c15.6-33,13.5-82.2-6-146.2c-12.3-40.4-29.4-79.1-41.4-104.9"/>
+	</g>
+</g>
+</svg>
+</div>
+</body>
+</html>
